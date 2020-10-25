@@ -8,6 +8,7 @@ def file_uri(filename):
     return pathlib.Path(os.path.abspath(filename)).as_uri()
 
 driver = webdriver.Chrome()
+#driver = webdriver.Edge(executable_path = 'C:\webdrivers\msedgedriver.exe')
 
 class WebpageTests(unittest.TestCase):
 
